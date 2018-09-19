@@ -1,0 +1,18 @@
+package overridingMethods;
+
+public class Employee {
+	//here manager will be considered a subclass of the employee
+	private int empId;
+	private String name;
+	
+	//accessible fields now
+	public Employee (int empId, String name) {
+		this.empId = empId;
+		this.name=name;
+	}
+	
+	//init method to get details
+	public String getDetails() {
+		return "ID: " + empId + " Name: " + name;
+	}
+}
