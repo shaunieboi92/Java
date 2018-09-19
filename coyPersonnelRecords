@@ -1,0 +1,38 @@
+package overridingMethods;
+
+public class coyPersonnelRecords{
+	
+	public static void main (String []args) {
+		
+		EmployeeStockPlan esp = new EmployeeStockPlan();//init EmployeeStockPlan instance		
+		Employee no1 = new Employee(24,"Harry");
+		System.out.println(no1.getDetails());
+		System.out.println("The bonus percentage for an employee is: " + getBonusPercent(no1));
+		System.out.println("The employee stock received for an employee is: " + esp.grantStock(no1) + "\n");
+
+		
+		//Polymorphism - Manager mo1 can be replaced with Employee since Manager is an extended subclass of Employee		
+		//Manager mo1 = new Manager(65,"Boss","Accounts");
+		Employee mo1 = new Manager(65,"Boss","Accounts");
+		System.out.println(mo1.getDetails());
+		System.out.println("The bonus percentage for a manager is: " + getBonusPercent(mo1));
+		System.out.println("The employee stock received for an employee is: " + esp.grantStock(mo1)+ "\n");
+
+		
+		Employee do1 = new Director(42,"BigBoss","AirSystems","Singapore");
+		System.out.println(do1.getDetails());
+		System.out.println("The bonus percentage for a director is: " + getBonusPercent(do1));
+		System.out.println("The employee stock received for an employee is: " + esp.grantStock(do1));
+
+
+	}
+
+	public static double getBonusPercent (Employee e) {
+		if(e instanceof Manager) {
+			return 0.03;
+		}else if(e instanceof Director) {
+			return 0.05;
+		}else return 0.01;
+	}
+	
+}
