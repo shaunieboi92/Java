@@ -1,0 +1,18 @@
+package overridingMethods;
+
+//here subclass manager extends to superclass employee
+public class Manager extends Employee{
+	//we want to have a unique field created just for manager on top of employee details
+	private String deptName;
+	//we call for method getDetails from superclass Employee
+	
+	public Manager(int empId, String name, String deptName) {
+		super(empId, name);
+		this.deptName=deptName;
+	}
+		//then we use an overriding method super
+	public String getDetails() {
+		return super.getDetails() + " Dept: " + deptName;
+	}
+
+}
