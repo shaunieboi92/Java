@@ -1,0 +1,19 @@
+package overridingMethods;
+
+public class Director extends Employee{
+	//we want to have a unique field created just for manager on top of employee details
+	private String deptName;
+	private String countrymanager;
+	//we call for method getDetails from superclass Employee
+	
+	public Director(int empId, String name, String deptName, String countrymanager) {
+		super(empId, name);
+		this.deptName=deptName;
+		this.countrymanager=countrymanager;
+	}
+		//then we use an overriding method super
+	public String getDetails() {
+		return super.getDetails() + " Dept: " + deptName + " Country Manager of " + countrymanager;
+	}
+
+}
