@@ -1,0 +1,39 @@
+package codingChallenge;
+
+import java.util.Scanner;
+
+public class minMax{
+	public static void main (String[]args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		
+		int max=0;
+		
+		
+		while(true) {//means always true , create endless loop, need to use break
+			
+			System.out.println("Enter number:");
+			
+			boolean isAnInt=scanner.hasNextInt();
+			
+			if(isAnInt) {
+				int  number=scanner.nextInt();
+				if(number>max) {
+					max=number;
+				}System.out.println("max = " + max );//you must put the print outside of the if, since it fulfils while the number is always int, it is out once the value is non int
+			}else {
+				System.out.println("The final MAX is " + max );
+				break;
+				
+			}
+			//break endless loop
+			
+			scanner.nextLine();
+			//
+		}
+		
+		scanner.close();//can be reached after the the loop in while is broken
+		//close is typed after while loop
+		
+	}
+}
