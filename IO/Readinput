@@ -1,0 +1,39 @@
+package codingChallenge;
+import java.util.Scanner;
+import java.util.TimeZone;
+import java.util.Date;
+import java.text.SimpleDateFormat;
+
+
+public class readingUserInput {
+	public static void main (String[]args) {
+		Scanner scanner = new Scanner(System.in);
+		//System.in allows you to type input into the console
+		//create an object of type scanner
+		System.out.println("Enter your name: ");
+		String name=scanner.nextLine();//it will read the next avail line
+		//to print out what was typed
+		System.out.println("Your name is : " + name);
+		System.out.println("");
+		
+		Date now = new Date();
+		SimpleDateFormat thisyear= new SimpleDateFormat("yyyy");
+		thisyear.setTimeZone(TimeZone.getTimeZone("Europe/London"));
+		
+		
+		System.out.println("Enter your year of Birth: ");
+		int yearOfBirth=scanner.nextInt();
+		int age= Integer.parseInt(thisyear.format(now)) - yearOfBirth;
+		if(age<0 || age>100) {
+			System.out.println("Invalid");
+		}else
+		System.out.println("Your age is : " + age);
+		
+		//to close scanner after using it
+		
+		scanner.close();
+		
+		
+	}
+	
+}
