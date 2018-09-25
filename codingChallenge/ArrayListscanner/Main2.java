@@ -9,43 +9,48 @@ public class Main {
 	
 	public static void main(String[]args) {
 		boolean quit=false;
-		int choice =0;
+		String choice;
 		printInstruction();
 		while(!quit) {
 			System.out.println("\n");
 			System.out.println("Enter your choice: ");
-			choice = scanner.nextInt();
+			choice = scanner.next();
 			scanner.nextLine();
-			
+			//instead of registering choice as an integer, if you want to ensure that the integers in the form of string are met
+			//just use string instead.instead of Integer.parseInt. 
+			//Any values<String> not met will be reached by default.
 				switch(choice) {
-					case 0:
+					case "0":
 						printInstruction();
 						break;
-					case 1:
+					case "1":
 						grocerylist.printGroceryList();
 						break;
-					case 2:
+					case "2":
 						addItem();
 						break;
-					case 3:
+					case "3":
 						modifyItem();
 						break;
-					case 4: 
+					case "4": 
 						removeItem();
 						break;
-					case 5:
+					case "5":
 						searchforItem();
 						break;
-					case 6:
+					case "6":
+					case "quit":{
+						System.out.println("End of Application");
 						quit=true;
 						break;
-					default: 
-						System.out.println("Invalid, please enter valid choice");
-					break;
-					
+					}
+					default:
+						System.out.println("Invalid, please input correct choice");
 				}
+			
+			//else System.out.println("Invalid, please enter valid choice");
 				
-			}
+		}
 		
 	}
 	
