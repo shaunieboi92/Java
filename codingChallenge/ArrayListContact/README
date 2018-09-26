@@ -1,0 +1,3 @@
+Yet to find a way to ensure name has already been added, 
+hence send a prompt "Name has already been added, please use another name". 
+Have to use ArrayList.contains(object) method
