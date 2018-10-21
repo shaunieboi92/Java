@@ -1,5 +1,5 @@
 package hashCode;
-
+//I can finally sleep... its 3.12. my brain is still active...
 import java.util.*;
 
 //Say for example you want to convert a alpha numeric password into an integer hash code
