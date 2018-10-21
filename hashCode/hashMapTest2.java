@@ -29,13 +29,16 @@ public class hashMapTest2 {
 		
 		//value() returns the view of values
 
+		
+		//entryset() method to get set view
 		for(Map.Entry kv: map.entrySet()) {
 			
 		}
+		Set set = map.entrySet();
 		//remove map
 		map.remove("Shaun");
 		//left with jacob
 		System.out.println(map);
-
+		System.out.println("Set values: " + set);
 	}
 }
