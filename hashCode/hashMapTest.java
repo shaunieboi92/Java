@@ -4,9 +4,10 @@ import java.lang.Object;
 import java.util.*;
 
 public class hashMapTest {
+	public static Map<String, Integer> numberMapping = new HashMap<>();
+
 	public static void main (String args[]) {
 		//create hashmap
-		Map<String, Integer> numberMapping = new HashMap<>();
 		//add key value pairs to hashmap
 		//use put method
 		numberMapping.put("One", 1);
