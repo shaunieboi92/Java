@@ -58,7 +58,7 @@ public class ScraperYahoo2 {
 		HashMap<String, String> map = new HashMap<>();
 		try {
 		Document doc = Jsoup.connect("https://finance.yahoo.com/quote/" + counterName).userAgent("Mozilla").get();
-
+		//have to use user agent, or else will hit error 403.replicates user http request to website
 		//get the root element
 		for(Element e : doc.select("table")){
 			Elements rows = e.select("tr");
