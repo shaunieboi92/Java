@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<people>
+	<person id='1'>
+		<lastName>Doe</lastName>
+		<firstName>John</firstName>
+	</person>
+	<person id='2'>
+		<lastName>Smith</lastName>
+		<firstName>Jim</firstName>
+	</person>
+</people>
