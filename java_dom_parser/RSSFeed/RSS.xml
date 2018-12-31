@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet title="XSL_formatting" type="text/xsl" href="feed.xsl"?>
+
+<rss version="2.0">
+
+<channel>
+	<title>Real's HowTo</title>
+	<description>Updates of useful code examples for Java</description>
+	<link>http://www.rgagnon.com/howto.html</link>
+	<pubDate>23 May 2007 00:00:00 GMT</pubDate>
+	<image>
+	    <title>Real's HowTo</title>
+	    <width>144</width>
+	    <height>41</height>
+	    <link>http://www.rgagnon.com/howto.html</link>
+	    <url>http://www.rgagnon.com/images/realhowto-left.jpg</url>
+	</image>
+	
+	<item>
+	<title>JS: Resize an IFRAME based on its content</title>
+	<description>Using the onLoad event, resize the IFRAME</description>
+	<link>http://www.rgagnon.com/jsdetails/js-0129.html</link>
+	<pubDate>23 May 2007 00:00:00 GMT</pubDate>
+	<guid>http://www.rgagnon.com/jsdetails/js-0129.html</guid>
+	</item>
+
+</channel>
+</rss>
