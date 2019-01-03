@@ -1,2 +1,3 @@
 # Java
-Contains Java classes
+Contains Java mini side projects
+
