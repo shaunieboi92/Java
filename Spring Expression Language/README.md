@@ -41,8 +41,8 @@ The XML conditional tag is only true if attribute is fulfilled
 
 ## Intermediate and Deferred Evaluation Syntax
 EL supports immediate and deferred evaluation of expressions
-- # Immediate evaluation means that the expression is evaluated immediately
-- # Deferred Evaluation means that the the expression can be evaluated sometime
+- ### Immediate evaluation means that the expression is evaluated immediately
+- ### Deferred Evaluation means that the the expression can be evaluated sometime
 later during the page life cycle, hence the name deferred
 
 - #Immediate expressions use ${} syntax
