@@ -3,7 +3,7 @@ Reference
 https://docs.spring.io/spring/docs/3.0.x/reference/expressions.html
 
 
-#Spring Expression Language(SpEL)
+# Spring Expression Language(SpEL)
 
 The Spring Expression Language (SpEL for short) is a powerful expression language that supports querying and manipulating an object graph at runtime. The language syntax is similar to Unified EL but offers additional features, most notably method invocation and basic string templating functionality.
 
@@ -14,7 +14,7 @@ While SpEL serves as the foundation for expression evaluation within the Spring 
 This chapter covers the features of the expression language, its API, and its language syntax. In several places an Inventor and Inventor's Society class are used as the target objects for expression evaluation. These class declarations and the data used to populate them are listed at the end of the chapter.
 
 
-#Spring Expression Language (SpEL)
+# Spring Expression Language (SpEL)
 
 - serves as foundation for expression evaluation within
 spring portfolio
@@ -38,16 +38,16 @@ of items in the session-scoped bean named cart.
 The XML conditional tag is only true if attribute is fulfilled
 
 
-#Intermediate and Deferred Evaluation Syntax
+# Intermediate and Deferred Evaluation Syntax
 EL supports immediate and deferred evaluation of expressions
-- #Immediate evaluation means that the expression is evaluated immediately
-- #Deferred Evaluation means that the the expression can be evaluated sometime
+- # Immediate evaluation means that the expression is evaluated immediately
+- # Deferred Evaluation means that the the expression can be evaluated sometime
 later during the page life cycle, hence the name deferred
 
 - #Immediate expressions use ${} syntax
 - #Deferred expressions use #{} syntax
 
-#Immediate evaluation
+# Immediate evaluation
 In the follow example, where the 'h:outputText' tag whose 'value' attribute references an
 immediate evaluation expression, that updates the quantity of books retrieved 
 from the bean named catalog
@@ -57,13 +57,13 @@ The Java Server Faces implementation evaluates the EL, and converts it,
 and immediately passes the returned value to the tag handler. The value is updated 
 on the page;
 
-#Deferred evaluation
+# Deferred evaluation
 
 #{expr} 
 <h:inputText id="name" value="#{customer.name}" />
 
 
-#Value and Method Expressions
+# Value and Method Expressions
 
 Value expressions can be evaluated to yield a value, and method expression used to reference 
 a method
@@ -79,7 +79,7 @@ ${true} *** boolean
 
 ${57} *** Integer
 
-#Parameterized method calls
+# Parameterized method calls
 Both the . and [] operators can be used for 
 invoking method calls with parameters, as shown in the following expression syntax:
 
