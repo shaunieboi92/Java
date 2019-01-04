@@ -25,7 +25,8 @@ spring portfolio
 Subclass of EL, where authors an use simple expressions to dynamically access
 data from JavaBeans
 
-#EL (Java Expression Language)
+# EL (Java Expression Language)
+
 Reference: https://docs.oracle.com/javaee/7/tutorial/jsf-el002.htm
 
 For example, in the example of c node, the test attribute of the following
